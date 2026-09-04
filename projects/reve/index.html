@@ -18,7 +18,7 @@
         <a href="#project">Project</a>
         <a href="#architecture">Architecture</a>
         <a href="#npc-ai">NPC AI</a>
-        <a href="#validation">Validation</a>x
+        <a href="#validation">Validation</a>
         <a href="#about">About</a>
       </nav>
 
@@ -428,15 +428,6 @@
                NEW recording recommended.
                Show an NPC remembering information from an earlier interaction,
                e.g. the player's name or a past event. -->
-          <figure class="media-frame media-card">
-            <video controls preload="metadata">
-              <source src="../../assets/videos/npc-memory.mp4" type="video/mp4">
-            </video>
-            <figcaption>
-              <strong>Per-NPC Memory</strong>
-              <span>Persistent conversational context across interactions.</span>
-            </figcaption>
-          </figure>
 
         </div>
 
@@ -461,7 +452,13 @@
                   actions easier to introduce without rewriting the orchestration layer.
                 </p>
               </div>
-
+              <div class="decision">
+                <strong>Per-NPC memory</strong>
+                <p>
+                  Each character maintains its own interaction history to support coherent,
+                  contextual responses.
+                </p>
+              </div>
               <div class="decision">
                 <strong>Asynchronous model communication</strong>
                 <p>
