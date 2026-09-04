@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nicola De Lillo — Gameplay / Technical Programmer portfolio. Reve: a data-driven Action RPG prototype with LLM-driven NPC behaviour, modular gameplay systems and designer-oriented workflows.">
+  <title>Nicola De Lillo | Gameplay & Technical Programming</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../../index.html" aria-label="Back to portfolio homepage">NDL</a>
+
+      <nav class="nav" aria-label="Project navigation">
+        <a href="../../index.html">Portfolio Home</a>
+        <a href="#project">Project</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#npc-ai">NPC AI</a>
+        <a href="#validation">Validation</a>x
+        <a href="#about">About</a>
+      </nav>
+
+      <a class="button button-small button-outline" href="../../assets/docs/CV - Nicola De Lillo.pdf">
+        Resume
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- =========================================================
+         HERO
+         IMAGE TO ADD:
+         ../../assets/images/reve-hero.jpg
+         Suggested content:
+         A strong in-game screenshot of Reve showing the player,
+         environment and ideally one NPC/enemy. Use a 16:9 image.
+         ========================================================= -->
+    <section class="hero">
+      <div class="hero-bg" role="img" aria-label="Reve gameplay environment"></div>
+
+      <div class="container hero-content">
+        <p class="eyebrow">Nicola De Lillo · Gameplay / Technical Programmer</p>
+
+        <h1>
+          Building gameplay systems that are
+          <span class="accent">modular, expressive and designer-friendly.</span>
+        </h1>
+
+        <p class="hero-copy">
+          Computer Engineer focused on gameplay programming, technical design
+          and game AI. My main project, <strong>Reve</strong>, is a Unity/C#
+          Action RPG prototype built around data-driven gameplay systems and an
+          LLM-based architecture that turns player interactions and game events
+          into controllable NPC behaviours.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button" href="#project">Explore Reve</a>
+          <a class="button button-outline" href="https://github.com/nik200122" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <a class="button button-outline" href="https://www.linkedin.com/in/nicola-de-lillo-nik/" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+        </div>
+
+        <ul class="hero-meta" aria-label="Key technologies">
+          <li>Unity</li>
+          <li>C#</li>
+          <li>Gameplay Systems</li>
+          <li>Game AI</li>
+          <li>LLMs</li>
+          <li>XML / Data-Driven Design</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         FEATURED PROJECT
+         ========================================================= -->
+    <section class="section" id="project">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">Featured Project</p>
+          <h2>Reve</h2>
+          <p class="section-intro">
+            A third-person fantasy Action RPG prototype for PC, developed in Unity by a team of 2 people, me and Eng.Ruben Gigante,
+            used as the foundation for my Master's thesis on LLM-driven NPC behaviour.
+          </p>
+        </div>
+
+        <div class="project-summary-grid">
+          <div class="project-summary-card">
+            <span class="label">Role</span>
+            <strong>Gameplay / Systems / AI Programming</strong>
+            <p>
+              Academic game-development project with both individual and collaborative
+              contributions. The damage system and damage-formula work were developed
+              collaboratively with another team member and friend, Ruben Gigante.
+            </p>
+          </div>
+
+          <div class="project-summary-card">
+            <span class="label">Engine & Language</span>
+            <strong>Unity · C#</strong>
+            <p>
+              Modular gameplay architecture with external XML configuration and runtime
+              integration of local Large Language Models.
+            </p>
+          </div>
+
+          <div class="project-summary-card">
+            <span class="label">Focus</span>
+            <strong>Gameplay Systems · NPC AI · Technical Design</strong>
+            <p>
+              The project was designed around rapid iteration, explicit system boundaries
+              and the separation of gameplay content from implementation logic.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- =====================================================
+             MAIN GAMEPLAY VIDEO
+             VIDEO TO ADD:
+             ../../assets/videos/reve-gameplay-overview.mp4
+             Suggested content:
+             45–60 second montage showing:
+             - movement/exploration
+             - combat
+             - equipment/items
+             - merchant
+             - abilities
+             - NPC interactions
+             - one or two LLM-driven behaviours
+             ===================================================== -->
+        <figure class="media-frame media-wide">
+          <video controls preload="metadata" poster="../../assets/images/reve-video-poster.jpg">
+            <source src="../../assets/videos/reve_gameplay_systems_overview.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </figure>
+
+        <!-- POSTER IMAGE TO ADD:
+             ../../assets/images/reve-video-poster.jpg
+             Suggested content:
+             A clean frame from the gameplay overview video. -->
+
+
+        <div class="systems-grid">
+
+          <article class="system-card">
+            <span class="system-number">01</span>
+            <h3>Combat & Attacks</h3>
+            <p>
+              Configurable attack types and combo-composition rules designed to keep
+              gameplay tuning outside the core implementation wherever possible.
+            </p>
+          </article>
+
+          <article class="system-card">
+            <span class="system-number">02</span>
+            <h3>Items & Equipment</h3>
+            <p>
+              Weapons, armour and consumable items influence player statistics and can
+              be defined through external data rather than hard-coded variants.
+            </p>
+          </article>
+
+          <article class="system-card">
+            <span class="system-number">03</span>
+            <h3>Abilities</h3>
+            <p>
+              Active and passive abilities with externally configurable types,
+              modifiers and activation constraints.
+            </p>
+          </article>
+
+          <article class="system-card">
+            <span class="system-number">04</span>
+            <h3>Shop & Inventory</h3>
+            <p>
+              Multiple merchants can be configured with different inventories,
+              supporting equipment and consumable-item workflows.
+            </p>
+          </article>
+
+          <article class="system-card">
+            <span class="system-number">05</span>
+            <h3>NPC Systems</h3>
+            <p>
+              NPC personality, backstory, available items, triggers and behavioural
+              configuration are defined through external data.
+            </p>
+          </article>
+
+          <article class="system-card">
+            <span class="system-number">06</span>
+            <h3>Damage System</h3>
+            <p>
+              Damage formulas and damage-type behaviour were developed collaboratively
+              with another team member and integrated into the wider data-driven gameplay
+              architecture.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         DATA-DRIVEN ARCHITECTURE
+         ========================================================= -->
+    <section class="section section-alt" id="architecture">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">Technical Design</p>
+          <h2>Data-driven gameplay architecture</h2>
+          <p class="section-intro">
+            A central design goal was to separate gameplay content from implementation
+            logic so that systems could be iterated without constantly modifying source code.
+          </p>
+        </div>
+
+        <div class="split-layout">
+          <div>
+            <h3>Designer-oriented iteration</h3>
+            <p>
+              Gameplay definitions such as NPC characteristics, items, abilities, attack
+              rules, player statistics, merchant inventories and other configuration can
+              be stored externally and loaded at runtime.
+            </p>
+
+            <p>
+              This reduces coupling between content iteration and programming work:
+              designers can adjust parameters and combinations while programmers focus
+              on reusable underlying systems.
+            </p>
+
+            <ul class="feature-list">
+              <li>External XML configuration</li>
+              <li>Runtime deserialization</li>
+              <li>Reusable gameplay primitives</li>
+              <li>Reduced hard-coding</li>
+              <li>Faster iteration for designers</li>
+            </ul>
+          </div>
+
+          <!-- IMAGE TO ADD:
+               ../../assets/diagrams/data-driven-flow.svg
+               Suggested content:
+               A clean diagram you redraw specifically for the website:
+               "XML / Designer Data → Runtime Loader → Gameplay Systems → In-Game Result"
+               Optionally show branches for NPCs, Items, Abilities and Attacks. -->
+          <figure class="media-frame">
+            <img src="../../assets/images/Architettura DataDriven.png"
+                 alt="Diagram showing external XML configuration flowing into runtime gameplay systems">
+            <figcaption>
+              Data-driven workflow — redraw this as a clean website diagram.
+            </figcaption>
+          </figure>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         LLM NPC SYSTEM
+         ========================================================= -->
+    <section class="section" id="npc-ai">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">Game AI / Master's Thesis</p>
+          <h2>LLM-driven NPC behaviour</h2>
+          <p class="section-intro">
+            The thesis extension explores how a language model can participate in
+            real-time gameplay while preserving explicit, controllable game actions.
+          </p>
+        </div>
+
+        <div class="architecture-highlight">
+
+          <!-- IMAGE TO ADD:
+               ../../assets/diagrams/llm-npc-architecture.svg
+               Suggested content:
+               A clean architecture diagram based on your thesis:
+               Game Event / Player Input
+                 → Trigger Handler
+                 → NPC Context + Memory
+                 → LLMManager
+                 → Local LLM / GPT4All
+                 → Structured JSON
+                 → NPCTriggerActionManager / ActionFactory
+                 → INPCAction
+                 → Concrete in-game behaviour
+               Also label NPCDataManager as the source of NPC configuration. -->
+          <figure class="media-frame media-diagram">
+            <img src="../../assets/images/Architettura Generale.jpg"
+                 alt="Architecture diagram of the LLM-driven NPC behaviour pipeline">
+            <figcaption>
+              System architecture — use a simplified redraw rather than a screenshot of the thesis slide.
+            </figcaption>
+          </figure>
+
+          <div class="pipeline">
+            <div class="pipeline-step">
+              <span>01</span>
+              <div>
+                <h3>Trigger</h3>
+                <p>A player interaction or contextual game event activates the system.</p>
+              </div>
+            </div>
+
+            <div class="pipeline-step">
+              <span>02</span>
+              <div>
+                <h3>Context construction</h3>
+                <p>NPC personality, backstory, memory and current game context are assembled.</p>
+              </div>
+            </div>
+
+            <div class="pipeline-step">
+              <span>03</span>
+              <div>
+                <h3>Structured LLM response</h3>
+                <p>The model produces constrained JSON containing dialogue and an intended action.</p>
+              </div>
+            </div>
+
+            <div class="pipeline-step">
+              <span>04</span>
+              <div>
+                <h3>Action resolution</h3>
+                <p>The response is mapped to explicit, reusable gameplay behaviours.</p>
+              </div>
+            </div>
+
+            <div class="pipeline-step">
+              <span>05</span>
+              <div>
+                <h3>Observable behaviour</h3>
+                <p>Unity executes the resulting movement, dialogue, item or social reaction.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="subsection-heading">
+          <h3>Behaviour examples</h3>
+          <p>
+            Use short clips rather than long demonstrations. Each clip should communicate
+            one behaviour in a few seconds.
+          </p>
+        </div>
+
+        <div class="video-grid">
+
+          <!-- VIDEO TO ADD:
+               ../../assets/videos/give-item.mp4
+               Suggested content:
+               NPC decides to give the player an item; show both the interaction
+               and the inventory/gameplay consequence if possible. -->
+          <figure class="media-frame media-card">
+            <video controls preload="metadata">
+              <source src="../../assets/videos/GiveItemAction.mov" type="video/mp4">
+            </video>
+            <figcaption>
+              <strong>Give Item</strong>
+              <span>LLM decision mapped to an inventory interaction.</span>
+            </figcaption>
+          </figure>
+
+          <!-- VIDEO TO ADD:
+               ../../assets/videos/flee.mp4
+               Suggested content:
+               NPC evaluates the situation and executes a flee behaviour. -->
+          <figure class="media-frame media-card">
+            <video controls preload="metadata">
+              <source src="../../assets/videos/FleeAction.mov" type="video/mp4">
+            </video>
+            <figcaption>
+              <strong>Flee</strong>
+              <span>Context-sensitive response translated into movement behaviour.</span>
+            </figcaption>
+          </figure>
+
+          <!-- VIDEO TO ADD:
+               ../../assets/videos/warn-others.mp4
+               Suggested content:
+               One NPC warns nearby NPCs and triggers a chained reaction.
+               This is one of the strongest clips for the portfolio. -->
+          <figure class="media-frame media-card">
+            <video controls preload="metadata">
+              <source src="../../assets/videos/WarnOthersAction.mov" type="video/mp4">
+            </video>
+            <figcaption>
+              <strong>Warn Others</strong>
+              <span>A trigger can propagate into reactions from nearby NPCs.</span>
+            </figcaption>
+          </figure>
+
+          <!-- VIDEO TO ADD:
+               ../../assets/videos/approach.mp4
+               Suggested content:
+               NPC autonomously approaches the player based on context. -->
+          <figure class="media-frame media-card">
+            <video controls preload="metadata">
+              <source src="../../assets/videos/ApproachAction.mov" type="video/mp4">
+            </video>
+            <figcaption>
+              <strong>Approach</strong>
+              <span>Action-to-action behaviour initiated from game context.</span>
+            </figcaption>
+          </figure>
+
+          <!-- VIDEO TO ADD:
+               ../../assets/videos/greet.mp4
+               Suggested content:
+               NPC greets the player after a contextual trigger. -->
+          <figure class="media-frame media-card">
+            <video controls preload="metadata">
+              <source src="../../assets/videos/GreetAction.mov" type="video/mp4">
+            </video>
+            <figcaption>
+              <strong>Greet</strong>
+              <span>Automatic reaction based on player proximity and NPC state.</span>
+            </figcaption>
+          </figure>
+
+          <!-- VIDEO TO ADD:
+               ../../assets/videos/npc-memory.mp4
+               Suggested content:
+               NEW recording recommended.
+               Show an NPC remembering information from an earlier interaction,
+               e.g. the player's name or a past event. -->
+          <figure class="media-frame media-card">
+            <video controls preload="metadata">
+              <source src="../../assets/videos/npc-memory.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+              <strong>Per-NPC Memory</strong>
+              <span>Persistent conversational context across interactions.</span>
+            </figcaption>
+          </figure>
+
+        </div>
+
+
+        <div class="split-layout technical-split">
+          <div>
+            <h3>Key engineering decisions</h3>
+
+            <div class="decision-list">
+              <div class="decision">
+                <strong>Structured JSON output</strong>
+                <p>
+                  Keeps the model's free-form generation separated from the finite set
+                  of gameplay actions the engine is allowed to execute.
+                </p>
+              </div>
+
+              <div class="decision">
+                <strong>Factory + polymorphic actions</strong>
+                <p>
+                  Behaviour implementations share a common action contract, making new
+                  actions easier to introduce without rewriting the orchestration layer.
+                </p>
+              </div>
+
+              <div class="decision">
+                <strong>Per-NPC memory</strong>
+                <p>
+                  Each character maintains its own interaction history to support coherent,
+                  contextual responses.
+                </p>
+              </div>
+
+              <div class="decision">
+                <strong>Asynchronous model communication</strong>
+                <p>
+                  Local LLM requests are isolated from Unity's main gameplay loop so model
+                  inference does not synchronously block the main thread.
+                </p>
+              </div>
+
+              <div class="decision">
+                <strong>Local inference</strong>
+                <p>
+                  GPT4All and a locally hosted quantized model were used to explore offline
+                  inference, data control and predictable integration.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- IMAGE TO ADD:
+               ../../assets/images/code-action-system.jpg
+               Suggested content:
+               A clean screenshot or recreated code snippet showing either:
+               - INPCAction interface + one concrete action
+               OR
+               - ActionFactory
+               Keep it to roughly 20–30 readable lines maximum. -->
+          <figure class="media-frame">
+            <img src="../../assets/images/DataDrivenNPC.png"
+                 alt="Code excerpt showing the modular NPC action system">
+            <figcaption>
+              Keep code excerpts short and annotate the architectural idea rather than showing whole files.
+            </figcaption>
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         DESIGNER WORKFLOW
+         ========================================================= -->
+    <section class="section section-alt" id="designer-workflow">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">Technical Design</p>
+          <h2>Keeping designer control in the loop</h2>
+          <p class="section-intro">
+            The goal was not to give an LLM unrestricted control of an NPC. The system
+            separates generative decision making from explicitly implemented gameplay
+            actions and external configuration.
+          </p>
+        </div>
+
+        <div class="designer-flow">
+          <div class="designer-flow-card">
+            <span>1</span>
+            <h3>Designer configures</h3>
+            <p>Personality, backstory, triggers, parameters and allowed behaviours.</p>
+          </div>
+
+          <div class="designer-flow-arrow" aria-hidden="true">→</div>
+
+          <div class="designer-flow-card">
+            <span>2</span>
+            <h3>LLM decides</h3>
+            <p>The model reasons within the current context and returns structured intent.</p>
+          </div>
+
+          <div class="designer-flow-arrow" aria-hidden="true">→</div>
+
+          <div class="designer-flow-card">
+            <span>3</span>
+            <h3>Game validates & executes</h3>
+            <p>Only predefined gameplay actions are resolved and executed inside Unity.</p>
+          </div>
+        </div>
+
+
+        <!-- IMAGE TO ADD:
+             ../../assets/images/designer-workflow.jpg
+             Suggested content:
+             A composite screenshot showing:
+             - XML/config file with personality/trigger/action parameters
+             - Unity inspector or game window
+             - resulting NPC behaviour
+             This should visually reinforce "designer iteration without changing code". -->
+        <figure class="media-frame media-wide top-gap">
+          <img src="../../assets/images/Config+conseguenza.png"
+               alt="Designer workflow showing external NPC configuration and resulting in-game behaviour">
+          <figcaption>
+            Suggested visual: configuration → Unity → resulting NPC behaviour.
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         VALIDATION
+         ========================================================= -->
+    <section class="section" id="validation">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">Evaluation</p>
+          <h2>Testing the prototype</h2>
+          <p class="section-intro">
+            The NPC system was evaluated with 12 participants using four dimensions:
+            action appropriateness, narrative coherence, responsiveness and memory/context.
+          </p>
+        </div>
+
+        <div class="metrics-grid">
+          <article class="metric-card">
+            <span class="metric-value">91.7%</span>
+            <h3>Action appropriateness</h3>
+            <p>Participants rating the system as good or excellent.</p>
+          </article>
+
+          <article class="metric-card">
+            <span class="metric-value">83.4%</span>
+            <h3>Narrative coherence</h3>
+            <p>Participants rating narrative consistency as good or excellent.</p>
+          </article>
+
+          <article class="metric-card">
+            <span class="metric-value">83.3%</span>
+            <h3>Memory & context</h3>
+            <p>Participants rating contextual memory as good or excellent.</p>
+          </article>
+
+          <article class="metric-card metric-card-warning">
+            <span class="metric-value">2–3s</span>
+            <h3>Response latency</h3>
+            <p>The main limitation identified during testing and the clearest target for future work.</p>
+          </article>
+        </div>
+
+
+        <!-- IMAGE TO ADD:
+             ../../assets/images/validation-chart.jpg
+             Suggested content:
+             Recreate the Likert results from the thesis as a clean modern chart,
+             rather than inserting a screenshot of the thesis page.
+             Show the four metrics and their response distributions. -->
+        <figure class="media-frame media-wide top-gap">
+          <img src="../../assets/images/likert_validation.png"
+               alt="Chart summarising participant evaluation of the LLM-driven NPC system">
+          <figcaption>
+            Recreate the evaluation chart from the thesis with cleaner typography for the website.
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         LIMITATIONS / LESSONS
+         ========================================================= -->
+    <section class="section section-alt">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">Reflection</p>
+          <h2>What I would improve</h2>
+          <p class="section-intro">
+            A portfolio is stronger when it explains limitations and engineering trade-offs,
+            not only successful features.
+          </p>
+        </div>
+
+        <div class="lessons-grid">
+
+          <article class="lesson-card">
+            <h3>Latency</h3>
+            <p>
+              Local LLM inference introduced response times of roughly 2–3 seconds,
+              acceptable for some dialogue interactions but unsuitable for highly
+              reactive gameplay.
+            </p>
+          </article>
+
+          <article class="lesson-card">
+            <h3>Hybrid AI</h3>
+            <p>
+              A production-oriented iteration could combine deterministic systems for
+              time-critical behaviour with LLM reasoning for higher-level decisions,
+              dialogue and contextual adaptation.
+            </p>
+          </article>
+
+          <article class="lesson-card">
+            <h3>Caching & smaller models</h3>
+            <p>
+              Lighter models, response caching and more aggressive context management
+              would be immediate candidates for reducing inference cost and latency.
+            </p>
+          </article>
+
+          <article class="lesson-card">
+            <h3>Creative control</h3>
+            <p>
+              More sophisticated validation, fallback rules and authoring tools would
+              further reduce the risk of unexpected or narratively inappropriate model
+              behaviour.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         RESOURCES
+         ========================================================= -->
+    <section class="section" id="resources">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">Project Resources</p>
+          <h2>Go deeper</h2>
+        </div>
+
+        <div class="resource-grid">
+
+          <a class="resource-card" href="https://github.com/nik200122/Reve-Project" target="_blank" rel="noopener noreferrer">
+            <span class="label">Code</span>
+            <h3>Source Code</h3>
+            <p>Full repository and implementation details.</p>
+          </a>
+
+          <a class="resource-card" href="../../assets/docs/TesiMagistraleNicolaDeLillo1.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="label">Research</span>
+            <h3>Master's Thesis</h3>
+            <p>Full architecture, implementation and evaluation.</p>
+          </a>
+
+          <a class="resource-card" href="../../assets/docs/tesiMagistrale.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="label">Presentation</span>
+            <h3>Project Slides</h3>
+            <p>Concise visual overview of the project.</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         ABOUT
+         IMAGE TO ADD:
+         ../../assets/images/nicola-profile.jpg
+         Suggested content:
+         Optional professional portrait. If you do not want a portrait,
+         remove the entire <figure class="profile-image"> block.
+         ========================================================= -->
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Nicola De Lillo</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>
