@@ -1,0 +1,271 @@
+/* ==========================================================================
+   Mountain Citadel — project-scoped stylesheet
+   All selectors are prefixed with ld- or scoped under .level-study.
+   This file intentionally avoids modifying the portfolio's existing CSS.
+   ========================================================================== */
+
+.level-study {
+  --ld-bg: #0d0f12;
+  --ld-panel: #15181d;
+  --ld-panel-2: #111419;
+  --ld-text: #f1f3f5;
+  --ld-muted: #a9b0ba;
+  --ld-line: rgba(255,255,255,.12);
+  --ld-accent: #d6ff5f;
+  --ld-max: 1240px;
+  background: var(--ld-bg);
+  color: var(--ld-text);
+}
+
+.level-study img {
+  display: block;
+  max-width: 100%;
+}
+
+.ld-shell {
+  width: min(calc(100% - 40px), var(--ld-max));
+  margin-inline: auto;
+}
+
+.ld-topbar {
+  min-height: 64px;
+  padding: 16px max(20px, calc((100vw - var(--ld-max)) / 2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid var(--ld-line);
+  background: rgba(13,15,18,.92);
+  backdrop-filter: blur(14px);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.ld-topbar a,
+.ld-footer a {
+  color: var(--ld-text);
+  text-decoration: none;
+}
+
+.ld-topbar a:hover,
+.ld-footer a:hover {
+  color: var(--ld-accent);
+}
+
+.ld-topbar-label {
+  color: var(--ld-muted);
+  font-size: .85rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.ld-hero {
+  padding: clamp(56px, 8vw, 110px) 0 56px;
+}
+
+.ld-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.4fr);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: end;
+}
+
+.ld-kicker,
+.ld-section-number {
+  margin: 0 0 14px;
+  color: var(--ld-accent);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.ld-hero h1 {
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 6.6rem);
+  line-height: .92;
+  letter-spacing: -.055em;
+}
+
+.ld-lead {
+  margin: 28px 0 32px;
+  max-width: 62ch;
+  color: var(--ld-muted);
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  line-height: 1.6;
+}
+
+.ld-meta {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 28px;
+}
+
+.ld-meta div {
+  padding-top: 12px;
+  border-top: 1px solid var(--ld-line);
+}
+
+.ld-meta dt {
+  color: var(--ld-muted);
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.ld-meta dd {
+  margin: 6px 0 0;
+  line-height: 1.45;
+}
+
+.ld-hero-media,
+.ld-media {
+  margin: 0;
+}
+
+.ld-hero-media img,
+.ld-media img {
+  width: 100%;
+  border-radius: 14px;
+  background: #090a0c;
+}
+
+.ld-hero-media img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.ld-section {
+  padding: clamp(64px, 9vw, 128px) 0;
+  border-top: 1px solid var(--ld-line);
+}
+
+.ld-section-alt {
+  background: var(--ld-panel-2);
+}
+
+.ld-prose-grid {
+  display: grid;
+  grid-template-columns: minmax(180px, .65fr) minmax(0, 1.35fr);
+  gap: clamp(32px, 7vw, 100px);
+  margin-bottom: 48px;
+}
+
+.ld-section h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4.5vw, 4.2rem);
+  line-height: 1;
+  letter-spacing: -.035em;
+}
+
+.ld-copy {
+  max-width: 76ch;
+  color: #d8dde3;
+  font-size: clamp(1rem, 1.5vw, 1.16rem);
+  line-height: 1.75;
+}
+
+.ld-copy p {
+  margin: 0 0 1.2em;
+}
+
+.ld-gallery-2,
+.ld-gallery-3 {
+  width: min(calc(100% - 40px), var(--ld-max));
+  margin-inline: auto;
+  display: grid;
+  gap: 24px;
+}
+
+.ld-gallery-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ld-gallery-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 24px;
+}
+
+.ld-media {
+  background: var(--ld-panel);
+  border: 1px solid var(--ld-line);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.ld-media img {
+  border-radius: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.ld-media figcaption {
+  padding: 15px 16px 17px;
+  color: var(--ld-muted);
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+.ld-media-wide {
+  margin-top: 24px;
+}
+
+.ld-media-wide img {
+  aspect-ratio: 2 / 1;
+}
+
+.ld-takeaways {
+  margin: 0;
+  padding-left: 1.25em;
+}
+
+.ld-takeaways li {
+  margin: 0 0 .75em;
+}
+
+.ld-reference {
+  margin-top: 34px !important;
+  padding-top: 22px;
+  border-top: 1px solid var(--ld-line);
+  color: var(--ld-muted);
+  font-size: .9rem;
+}
+
+.ld-footer {
+  border-top: 1px solid var(--ld-line);
+  padding: 32px 0 48px;
+  color: var(--ld-muted);
+}
+
+@media (max-width: 900px) {
+  .ld-hero-grid,
+  .ld-prose-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ld-gallery-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .ld-meta {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .ld-gallery-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .ld-topbar-label {
+    display: none;
+  }
+
+  .ld-shell,
+  .ld-gallery-2,
+  .ld-gallery-3 {
+    width: min(calc(100% - 28px), var(--ld-max));
+  }
+}

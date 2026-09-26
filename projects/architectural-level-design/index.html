@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mountain Citadel — an Unreal Engine 5 level design case study focused on spatial contrast, landmarks, rewarding vistas, curiosity and route readability.">
+  <title>Mountain Citadel — Level Design Study</title>
+
+  <!-- Keep the portfolio's existing global stylesheet. -->
+  <link rel="stylesheet" href="../../style.css">
+
+  <!-- Project-scoped styles only: no existing global rules are overwritten. -->
+  <link rel="stylesheet" href="./level-design.css">
+</head>
+
+<body class="level-study">
+  <header class="ld-topbar">
+    <a class="ld-back" href="../../index.html" aria-label="Back to portfolio">← Back to portfolio</a>
+    <span class="ld-topbar-label">Level Design Case Study</span>
+  </header>
+
+  <main>
+    <section class="ld-hero">
+      <div class="ld-shell ld-hero-grid">
+        <div class="ld-hero-copy">
+          <p class="ld-kicker">Unreal Engine 5 · Spatial Level Design</p>
+          <h1>Mountain Citadel</h1>
+          <p class="ld-lead">
+            A compact exploration level built to demonstrate how architecture can guide
+            attention, movement and curiosity without relying on explicit objective markers.
+          </p>
+
+          <dl class="ld-meta">
+            <div><dt>Focus</dt><dd>Level Design / Spatial Guidance</dd></div>
+            <div><dt>Engine</dt><dd>Unreal Engine 5</dd></div>
+            <div><dt>Structure</dt><dd>Non-linear route network around a central landmark</dd></div>
+            <div><dt>Reference</dt><dd>Christopher W. Totten, <em>An Architectural Approach to Level Design</em></dd></div>
+          </dl>
+        </div>
+
+        <figure class="ld-hero-media">
+          <img src="../../assets/images/architectural-level-design/17-final-reveal.webp"
+               alt="The player exits a compressed rocky passage and sees the castle dominating the skyline.">
+        </figure>
+      </div>
+    </section>
+
+    <section class="ld-section">
+      <div class="ld-shell ld-prose-grid">
+        <div>
+          <p class="ld-section-number">01</p>
+          <h2>Design Intent</h2>
+        </div>
+        <div class="ld-copy">
+          <p>
+            The level is organized around a single long-term visual objective: the castle.
+            It remains readable from multiple parts of the space, acting both as the dominant
+            landmark and as an architectural “weenie” that continuously re-orients the player.
+          </p>
+          <p>
+            Around that anchor, the route is broken into short-term goals, elevated prospects,
+            partial reveals and optional reward spaces. The intention is to make exploration feel
+            self-directed while still giving the player enough spatial information to understand
+            where they are in relation to the final destination.
+          </p>
+        </div>
+      </div>
+
+      <div class="ld-shell">
+        <figure class="ld-media ld-media-wide">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/00-overview.webp"
+               alt="Top-down overview of the level with the castle, lake, hilltop ruins and multiple paths.">
+          <figcaption>
+            Macro layout. The castle anchors the composition while the path network loops around it,
+            creating several approaches that preserve visual orientation.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="ld-section ld-section-alt">
+      <div class="ld-shell ld-prose-grid">
+        <div>
+          <p class="ld-section-number">02</p>
+          <h2>Compression → Prospect</h2>
+        </div>
+        <div class="ld-copy">
+          <p>
+            The imagined arrival begins in a narrow, refuge-like approach and opens into a much larger
+            prospect space. The spatial contrast is deliberate: compression limits information, while
+            the open area suddenly exposes the player to a broad field of view and multiple possible routes.
+          </p>
+          <p>
+            The castle is revealed immediately at long range. This establishes the level’s long-term goal
+            before the player has to make any local navigation decisions.
+          </p>
+        </div>
+      </div>
+
+      <div class="ld-shell ld-gallery-2">
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/01-arrival-prospect.webp"
+               alt="The player enters an open valley with the castle visible in the distance.">
+          <figcaption>
+            The open prospect gives the player a broad read of the space while keeping the castle
+            visible as the primary destination.
+          </figcaption>
+        </figure>
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/02-short-term-goal.webp"
+               alt="The castle and a smaller set of ruins are visible from the starting area.">
+          <figcaption>
+            The smaller ruin on the hill competes only at a local scale, creating a short-term goal
+            without replacing the castle as the dominant landmark.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="ld-section">
+      <div class="ld-shell ld-prose-grid">
+        <div>
+          <p class="ld-section-number">03</p>
+          <h2>Short-Term Goal &amp; Rewarding Vista</h2>
+        </div>
+        <div class="ld-copy">
+          <p>
+            The hilltop ruin is placed close enough to feel attainable and visually distinct enough to
+            attract the first detour. Reaching it rewards the player twice: first through a framed glimpse
+            of the castle, then through elevation that exposes a larger portion of the route network.
+          </p>
+          <p>
+            The reward is therefore not only decorative. The vista also provides information:
+            the player can read the lake route and the alternative paths wrapping around the castle.
+          </p>
+        </div>
+      </div>
+
+      <div class="ld-shell ld-gallery-2">
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/03-framed-castle.webp"
+               alt="The castle is framed by an opening in the hilltop ruins.">
+          <figcaption>
+            Framing the long-term goal through the ruin preserves visual continuity while the player
+            explores a secondary objective.
+          </figcaption>
+        </figure>
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/04-rewarding-vista.webp"
+               alt="Elevated view toward the castle after reaching the hilltop ruin.">
+          <figcaption>
+            The elevated position functions as a rewarding vista and as an information reward:
+            the player gains a clearer understanding of the surrounding space.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="ld-shell ld-gallery-3">
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/05-route-read-lake.webp"
+               alt="View from the elevated area toward the route by the lake.">
+          <figcaption>Route option: toward the lake.</figcaption>
+        </figure>
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/06-route-read-center.webp"
+               alt="View from the elevated area toward a central path.">
+          <figcaption>Route option: through the central valley.</figcaption>
+        </figure>
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/07-route-read-right.webp"
+               alt="View from the elevated area toward the right-hand route around the castle.">
+          <figcaption>Route option: around the opposite side of the castle.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="ld-section ld-section-alt">
+      <div class="ld-shell ld-prose-grid">
+        <div>
+          <p class="ld-section-number">04</p>
+          <h2>Curiosity Through Partial Information</h2>
+        </div>
+        <div class="ld-copy">
+          <p>
+            The lake route is intentionally more guided. Its initial direction is easy to read, but the
+            path periodically withholds information through rock formations, vegetation and angled turns.
+            The player receives enough visual evidence to suspect that more space exists beyond the current
+            view, but not enough to resolve it immediately.
+          </p>
+          <p>
+            This follows the logic of Totten’s <em>Zen Views</em>: reward anticipation by showing partial
+            information and delaying complete access. Obtusely angled spaces are also used to hide parts
+            of upcoming areas and sustain curiosity around corners.
+          </p>
+        </div>
+      </div>
+
+      <div class="ld-shell ld-gallery-2">
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/08-lake-route.webp"
+               alt="The player approaches the lake from the hill.">
+          <figcaption>
+            The route narrows the field of choice after the earlier prospect space, giving the player a
+            clear next direction.
+          </figcaption>
+        </figure>
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/09-landmark-continuity.webp"
+               alt="The castle remains visible while the player follows the lake route.">
+          <figcaption>
+            The castle remains in visual memory even when it is not the immediate destination,
+            preserving macro-orientation.
+          </figcaption>
+        </figure>
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/10-guided-path.webp"
+               alt="A relatively straight route guides the player between rock formations.">
+          <figcaption>
+            A more linear section resets navigation complexity before the next reveal.
+          </figcaption>
+        </figure>
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/11-partial-reveal.webp"
+               alt="A constrained rocky opening gives a partial view of space beyond.">
+          <figcaption>
+            A partial reveal suggests another space beyond the current route without immediately
+            explaining how to reach it.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="ld-section">
+      <div class="ld-shell ld-prose-grid">
+        <div>
+          <p class="ld-section-number">05</p>
+          <h2>Optional Reward Space</h2>
+        </div>
+        <div class="ld-copy">
+          <p>
+            The route eventually resolves into a choice. One branch leads toward a ruined clearing.
+            Because this space is not required for reaching the castle, it can support optional rewards:
+            environmental storytelling, narrative context, resources or gameplay utility.
+          </p>
+          <p>
+            The space gives curiosity a concrete payoff. Exploration is encouraged not by an objective
+            marker, but by spatial denial followed by access.
+          </p>
+        </div>
+      </div>
+
+      <div class="ld-shell ld-gallery-2">
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/12-branching-space.webp"
+               alt="The path opens into a branching area among rock formations.">
+          <figcaption>
+            The branch is readable only after the player has committed to the lake route, preventing the
+            opening space from becoming visually overloaded.
+          </figcaption>
+        </figure>
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/13-optional-ruins.webp"
+               alt="The player reaches overgrown ruined towers in a shaded clearing.">
+          <figcaption>
+            The ruined clearing can hold narrative or resource rewards while also reinforcing the history
+            of the environment.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="ld-section ld-section-alt">
+      <div class="ld-shell ld-prose-grid">
+        <div>
+          <p class="ld-section-number">06</p>
+          <h2>Reorientation &amp; Return to the Landmark</h2>
+        </div>
+        <div class="ld-copy">
+          <p>
+            After the optional detour, the route bends back toward the castle. The player does not need a
+            map marker to understand this relationship: repeated glimpses and the castle’s scale preserve
+            its position in spatial memory.
+          </p>
+          <p>
+            Curved paths and obtuse turns keep the next space partially hidden, allowing each transition
+            to reveal information progressively instead of exposing the entire route at once.
+          </p>
+        </div>
+      </div>
+
+      <div class="ld-shell ld-gallery-2">
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/14-return-route.webp"
+               alt="A broad path continues through the valley after the optional ruins.">
+          <figcaption>
+            The route resumes toward the main objective after the optional reward space.
+          </figcaption>
+        </figure>
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/15-curved-path.webp"
+               alt="A curved path hides its continuation behind vegetation and rock.">
+          <figcaption>
+            The bend limits long-range information and keeps movement exploratory rather than purely
+            transactional.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="ld-section">
+      <div class="ld-shell ld-prose-grid">
+        <div>
+          <p class="ld-section-number">07</p>
+          <h2>Final Compression &amp; Castle Reveal</h2>
+        </div>
+        <div class="ld-copy">
+          <p>
+            The final approach deliberately returns to compression. Rock walls create a narrow corridor
+            that temporarily removes the castle from view and reduces the player’s awareness of the
+            surrounding level.
+          </p>
+          <p>
+            Exiting this passage produces the final prospect reveal. The castle is now much closer and
+            occupies far more of the visual field. The same landmark introduced at the beginning therefore
+            changes function over the course of the level: first it promises a destination, then it
+            re-orients exploration, and finally it confirms arrival.
+          </p>
+        </div>
+      </div>
+
+      <div class="ld-shell ld-gallery-2">
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/16-compressed-passage.webp"
+               alt="The player crosses a narrow dark passage between tall rock walls.">
+          <figcaption>
+            Compression removes peripheral information and creates contrast before the final reveal.
+          </figcaption>
+        </figure>
+        <figure class="ld-media">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/17-final-reveal.webp"
+               alt="The player exits the passage and sees the castle close above the valley.">
+          <figcaption>
+            The final prospect reintroduces the landmark at a much larger apparent scale, emphasizing
+            arrival and dominance.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="ld-shell">
+        <figure class="ld-media ld-media-wide">
+          <img loading="lazy" src="../../assets/images/architectural-level-design/18-castle-dominance.webp"
+               alt="Low-angle view of the castle dominating the skyline above foreground vegetation.">
+          <figcaption>
+            The low-angle composition reinforces the castle’s visual weight at the end of the route.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="ld-section ld-summary">
+      <div class="ld-shell ld-prose-grid">
+        <div>
+          <p class="ld-section-number">08</p>
+          <h2>What This Study Demonstrates</h2>
+        </div>
+        <div class="ld-copy">
+          <ul class="ld-takeaways">
+            <li>Using spatial contrast to control tension, visibility and pacing.</li>
+            <li>Establishing a long-term landmark while scheduling smaller short-term goals.</li>
+            <li>Rewarding exploration with vistas, information, optional narrative spaces and access.</li>
+            <li>Using partial information, framing and obtuse turns to sustain curiosity.</li>
+            <li>Maintaining orientation across a non-linear route network without explicit UI guidance.</li>
+            <li>Using elevation and repeated sight lines to communicate route structure.</li>
+          </ul>
+          <p class="ld-reference">
+            Design framework informed by Christopher W. Totten,
+            <em>An Architectural Approach to Level Design</em>, Second Edition.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ld-footer">
+    <div class="ld-shell">
+      <a href="../../index.html">← Back to portfolio</a>
+    </div>
+  </footer>
+</body>
+</html>
